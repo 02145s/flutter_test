@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(
+  MaterialApp(
+    home: MyApp(),
+  )
+);
+
+class MyApp extends StatelessWidget {
+  MyApp createState() => MyApp();
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.cyan,
+        title: Text("ㅌㅔ스트", style: TextStyle(color: Colors.white),),
+        elevation: 0,
+        centerTitle: true,
+        iconTheme: IconThemeData(
+            color: Colors.amber
+        ),
+      ),
+      drawer: Drawer(
+        child: Center(
+          child: Text("사이드 메뉴"),
+        ),
+      ),
+      body: Center(
+        child: Text("본문 내용"),
+      ),
+    );
+  }
+}

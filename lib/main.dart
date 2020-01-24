@@ -23,9 +23,15 @@ class MyApp extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        child: Center(
-          child: Text("사이드 메뉴"),
+        child: ListView(
+          children: <Widget>
+          [
+
+            ListTile(title: Text('title1',style: TextStyle(fontSize: 20, color: Colors.green)),)
+        ],
+
         ),
+
       ),
       body: Center(
         child: Text("본문 내용"),
@@ -33,3 +39,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+//test

@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan,
-        title: Text("ㅌㅔ스트", style: TextStyle(color: Colors.white),),
+        title: Text("상단메뉴바", style: TextStyle(color: Colors.white),),
         elevation: 0,
         centerTitle: true,
         iconTheme: IconThemeData(
